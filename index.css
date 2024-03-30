@@ -1,0 +1,17 @@
+body{
+    width:100%;
+    background-color:gray;
+    color:black;
+    font-family:fantasy;
+    font-size:20px;
+    border:solid black 5px;
+    margin:10px;
+    padding:10px;
+  }
+  #Form1{
+    display:block;
+  }
+  #Form2{
+    display:block;
+  }
+  

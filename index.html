@@ -1,21 +1,22 @@
+
 <DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">Enter information in the blanks</p>
     <form id="survey-form">
-    <fieldset>
-        <label id="name-label">Name <input type="text" id="name" name="name"  placeholder="Enter your name" /> </label>
-        <label id="email-label">Add-email<input type="email" id="email" placeholder="Enter your email"></label>
-        <label id="number-label">Add-number<input type="number" id="age" placeholder="Enter your age"></label>
+    <fieldset id="Form1">
+        <label id="name-label">Name <input type="text" id="name" name="name"  placeholder="Enter your name" required/> </label>
+        <label id="email-label">Add-email<input type="email" id="email" placeholder="Enter your email" required></label>
+        <label id="number-label">Add-number<input type="number" id="number" placeholder="Enter your age"min="12" max="99" required></label>
     </fieldset>
-    <fieldset>
+    <fieldset id="Form2">
         <label>What your role
           <select id="dropdown" name="role">
             <option>What  your role</option>
@@ -24,7 +25,37 @@
           </select>
         </label>
     </fieldset>
-        
+    <fieldset>
+        <label>
+          What your favorite color
+          <input type="radio" name="color"value="yellow" />Yellow
+        </label>
+        <label>
+          <input type="radio" name="color"value="red" />Red
+        </label>
+        <label>
+          <input type="radio" name="color" value="Blue" />Blue
+        </label>
+        <label>
+          <input type="radio" name="color" value="green" />Green
+        </label>
+        <fieldset>
+            <label>What your favorite Game
+                <input type="checkbox" name="game" value="Valorant">Valorant
+            </labet>
+            <label>
+                <input type="checkbox" name="game" value="GTA V">GTA V
+            </label>
+            <label>
+                <input type="checkbox" name="game" value="Elden Ring">Elden Ring
+            </label>
+        </fieldset>
+        <label>
+           PLase Comment <textarea name="Comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+    </fieldset>
+    <input type="submit"id="submit" name="submit" value="submit">
     </form>
 </body>
 </html>
+
